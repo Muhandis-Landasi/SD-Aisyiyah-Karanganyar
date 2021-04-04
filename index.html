@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!--
+  Customize this policy to fit your own app's needs. For more guidance, see:
+      https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+  Some notes:
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+      * Enable inline JS: add 'unsafe-inline' to default-src
+  -->
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap: content:">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+
+  <meta name="theme-color" content="#007aff">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <title>My App 5</title>
+  <link rel="stylesheet" href="framework7/framework7-bundle.min.css">
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="framework7/framework7-icons.css">
+</head>
+<body>
+  <div id="app">
+    
+    
+    <!-- Views/Tabs container -->
+    <div class="views tabs safe-areas">
+      <!-- Tabbar for switching views-tabs -->
+      <div class="toolbar toolbar-bottom tabbar-labels">
+        <div class="toolbar-inner">
+          <a href="#view-home" class="tab-link tab-link-active">
+            <i class="icon f7-icons if-not-md">house_fill</i>
+            <i class="icon material-icons if-md">home</i>
+            <span class="tabbar-label">Home</span>
+          </a>
+          <a href="#" class="tab-link login-screen-open" data-login-screen="#my-login-screen">
+          <!--<a href="#" class="tab-link" data-login-screen="#my-login-screen">-->
+            <i class="icon f7-icons if-not-md">person_alt_circle_fill</i>
+            <i class="icon material-icons if-md">person_alt_circle_fill</i>
+            <span class="tabbar-label">Login</span>
+          </a>
+          
+        </div>
+      </div>
+
+      <!-- Your main view/tab, should have "view-main" class. It also has "tab-active" class -->
+      <div id="view-home" class="view view-main view-init tab tab-active">
+        <div class="page" data-name="home">
+          <!-- Top Navbar -->
+          <div class="navbar navbar-small">
+            <div class="navbar-bg"></div>
+            <div class="navbar-inner">
+             
+              <div class="title sliding">SD Aisyiyah Karanganyar </div>
+              
+              
+            </div>
+          </div>
+
+          <!-- Scrollable page content-->
+          <div class="page-content">
+            <div class="card">
+            <div class="swiper-container swiper-init demo-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img data-src="http://karanganyar.aisyiyah.or.id/files/102/image/SD%20Aisyiyah%20Surya%20Ceria%20Karanganyar%20Bersiap%20menjadi%20Sekolah%20Adiwiyata8.jpg" 
+                  width="350" height="260" class="lazy lazy-fade-in demo-lazy" /></div>
+                <div class="swiper-slide"><img data-src="http://karanganyar.aisyiyah.or.id/files/102/image/SD%20Aisyiyah%20Surya%20Ceria%20Karanganyar%20Bersiap%20menjadi%20Sekolah%20Adiwiyata7.jpg" 
+                  width="350" height="260" class="lazy lazy-fade-in demo-lazy" /></div>
+                <div class="swiper-slide"><img data-src="http://karanganyar.aisyiyah.or.id/files/102/image/SD%20Aisyiyah%20Surya%20Ceria%20Karanganyar%20Bersiap%20menjadi%20Sekolah%20Adiwiyata4.jpg" 
+                  width="350" height="260" class="lazy lazy-fade-in demo-lazy" /></div>
+
+              </div>
+            </div>
+            </div>      
+            
+
+            <div class="block-title">Pembelajaran Online</div>
+
+            <div class="block block-strong">
+              <div class="row">
+                <div class="col-30">
+                  <a href="#" class="button button-raised button-fill popup-open" data-popup="#my-popup">
+                    Kelas 1</a>
+                </div>
+                <div class="col-30">
+                  <a href="#" class="button button-raised button-fill popup-open" data-popup="#my-popup2">Kelas 2</a>
+                </div>
+                <div class="col-30">
+                  <a href="#" class="button button-raised button-fill popup-open" data-popup="#my-popup3">Kelas 3</a>
+                </div>
+              </div>
+              <p></p>
+              <div class="row">
+                <div class="col-30">
+                  <a href="#" class="button button-raised button-fill popup-open" data-popup="#my-popup4">Kelas 4</a>
+                </div>
+                <div class="col-30">
+                  <a href="#" class="button button-raised button-fill popup-open" data-popup="#my-popup5">Kelas 5</a>
+                </div>
+                <div class="col-30">
+                  <a href="#" class="button button-raised button-fill popup-open" data-popup="#my-popup6">Kelas 6</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="block-title">PPDB Online</div>
+            <div class="block block-strong">
+              <div class="row">
+                <div class="col-50">
+                  <a href="/about/" class="button button-raised button-fill item-content item-link">Informasi</a>
+                 
+                  
+                </div>
+                <div class="col-50">
+                  <a href="#view-settings" class="button button-raised button-fill tab-link">Daftar</a>
+                  
+                </div>
+              </div>
+            </div>
+            
+              <div class="block-title">Profil Sekolah</div>
+                <div class="block">
+                  <div class="row">
+                    <div class="col">
+                      <div class="card  bg-color-yellow">
+                        <div class="card-content card-content-padding">
+                          Profil
+                        </div>
+                     </div>
+                    </div>
+                    <div class="col">
+                      <div class="card bg-color-blue">
+                        <div class="card-content card-content-padding">
+                          Facebook
+                        </div>
+                     </div>
+                    </div>
+                    <div class="col">
+                      <div class="card bg-color-purple">
+                        <div class="card-content card-content-padding">
+                          Instagram
+                        </div>
+                     </div>
+                    </div>
+                  </div>
+                
+            
+                  <div class="row">
+                    <div class="col">
+                      <div class="card bg-color-red">
+                        <div class="card-content card-content-padding">
+                          Youtube
+                        </div>
+                     </div>
+                    </div>
+                    <div class="col">
+                      <div class="card bg-color-green">
+                        <div class="card-content card-content-padding">
+                          Website
+                        </div>
+                     </div>
+                    </div>
+                    <div class="col">
+                    </div>
+                  </div>
+                </div>
+
+                
+                  <div class="block-title">Kontak Sekolah</div>
+                  <div class="card">
+                    <div class="card-content card-content-padding">This is a simple card with plain text, but cards can also
+                      contain their own header, footer, list view, image, or any other element.</div>
+                  </div>
+                
+
+              
+          </div>
+        </div>
+      </div>
+     
+
+      <!-- Catalog View -->
+      <div id="view-catalog" class="view view-init tab" data-name="catalog" data-url="/catalog/">
+        <!-- Catalog page will be loaded here dynamically from /catalog/ route -->
+      </div>
+    
+
+      <!-- Settings View -->
+      <div id="view-settings" class="view view-init tab" data-name="settings" data-url="/settings/">
+        <!-- Settings page will be loaded here dynamically from /settings/ route -->
+      </div>
+    </div>
+
+
+    <!-- Popup -->
+    <div class="popup" id="my-popup">
+      <div class="view">
+        <div class="page">
+          <div class="navbar">
+            <div class="navbar-bg"></div>
+            <div class="navbar-inner">
+              <div class="title">Popup</div>
+              <div class="right">
+                <a href="#" class="link popup-close">Close</a>
+              </div>
+            </div>
+          </div>
+          <div class="page-content">
+            <div class="block">
+              <iframe src="https://drive.google.com/embeddedfolderview?id=0B1iqp0kGPjWsNDg5NWFlZjEtN2IwZC00NmZiLWE3MjktYTE2ZjZjNTZiMDY2#list" 
+              style="width:100%; height:600px; border:0;"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup -->
+    <div class="popup" id="my-popup2">
+      <div class="view">
+        <div class="page">
+          <div class="navbar">
+            <div class="navbar-bg"></div>
+            <div class="navbar-inner">
+              <div class="title">Popup2</div>
+              <div class="right">
+                <a href="#" class="link popup-close">Close</a>
+              </div>
+            </div>
+          </div>
+          <div class="page-content">
+            <div class="block">
+              <iframe src="https://drive.google.com/embeddedfolderview?id=0B1iqp0kGPjWsNDg5NWFlZjEtN2IwZC00NmZiLWE3MjktYTE2ZjZjNTZiMDY2#list" 
+              style="width:100%; height:600px; border:0;"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Popup -->
+    <div class="popup" id="my-popup3">
+      <div class="view">
+        <div class="page">
+          <div class="navbar">
+            <div class="navbar-bg"></div>
+            <div class="navbar-inner">
+              <div class="title">Popup3</div>
+              <div class="right">
+                <a href="#" class="link popup-close">Close</a>
+              </div>
+            </div>
+          </div>
+          <div class="page-content">
+            <div class="block">
+              <iframe src="https://drive.google.com/embeddedfolderview?id=0B1iqp0kGPjWsNDg5NWFlZjEtN2IwZC00NmZiLWE3MjktYTE2ZjZjNTZiMDY2#list" 
+              style="width:100%; height:600px; border:0;"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Popup -->
+    <div class="popup" id="my-popup4">
+      <div class="view">
+        <div class="page">
+          <div class="navbar">
+            <div class="navbar-bg"></div>
+            <div class="navbar-inner">
+              <div class="title">Popup4</div>
+              <div class="right">
+                <a href="#" class="link popup-close">Close</a>
+              </div>
+            </div>
+          </div>
+          <div class="page-content">
+            <div class="block">
+              <iframe src="https://drive.google.com/embeddedfolderview?id=0B1iqp0kGPjWsNDg5NWFlZjEtN2IwZC00NmZiLWE3MjktYTE2ZjZjNTZiMDY2#list" 
+              style="width:100%; height:600px; border:0;"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Popup -->
+    <div class="popup" id="my-popup5">
+      <div class="view">
+        <div class="page">
+          <div class="navbar">
+            <div class="navbar-bg"></div>
+            <div class="navbar-inner">
+              <div class="title">Popup5</div>
+              <div class="right">
+                <a href="#" class="link popup-close">Close</a>
+              </div>
+            </div>
+          </div>
+          <div class="page-content">
+            <div class="block">
+              <iframe src="https://drive.google.com/embeddedfolderview?id=0B1iqp0kGPjWsNDg5NWFlZjEtN2IwZC00NmZiLWE3MjktYTE2ZjZjNTZiMDY2#list" 
+              style="width:100%; height:600px; border:0;"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Popup -->
+    <div class="popup" id="my-popup6">
+      <div class="view">
+        <div class="page">
+          <div class="navbar">
+            <div class="navbar-bg"></div>
+            <div class="navbar-inner">
+              <div class="title">Popup6</div>
+              <div class="right">
+                <a href="#" class="link popup-close">Close</a>
+              </div>
+            </div>
+          </div>
+          <div class="page-content">
+            <div class="block">
+              <iframe src="https://drive.google.com/embeddedfolderview?id=0B1iqp0kGPjWsNDg5NWFlZjEtN2IwZC00NmZiLWE3MjktYTE2ZjZjNTZiMDY2#list" 
+              style="width:100%; height:600px; border:0;"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Login Screen -->
+    <div class="login-screen" id="my-login-screen">
+      <div class="view">
+        <div class="page">
+          <div class="page-content login-screen-content">
+            <div class="login-screen-title">Login</div>
+            <div class="list">
+              <ul>
+                <li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Username</div>
+                    <div class="item-input-wrap">
+                      
+                      <input type="text" name="username" placeholder="Your username"/>
+                    </div>
+                  </div>
+                </li>
+                <li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Password</div>
+                    <div class="item-input-wrap">
+                      
+                      <input type="password" name="password" placeholder="Your password"/>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="list">
+              <ul>
+                <li>
+                  
+                  <a href="#" class="item-link list-button login-button">Sign In</a>
+                </li>
+              </ul>
+              <div class="block-footer">Some text about login information.<br/>Click "Sign In" to close Login Screen</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- CORDOVA_PLACEHOLDER_DONT_REMOVE -->
+  <!-- Framework7 library -->
+  <script src="framework7/framework7-bundle.min.js"></script>
+  <!-- Cordova APIs -->
+  <script src="js/cordova-app.js"></script>
+  
+  <!-- App routes -->
+  <script src="js/routes.js"></script>
+  <!-- App store -->
+  <script src="js/store.js"></script>
+  <!-- App scripts -->
+  <script src="js/app.js"></script>
+</body>
+</html>
